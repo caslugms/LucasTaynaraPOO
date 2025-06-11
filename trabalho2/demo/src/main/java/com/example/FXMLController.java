@@ -16,10 +16,14 @@ public class FXMLController implements Initializable {
     
     @FXML
     private Label lblOut;
+
+    private int cont = 0;
     
     @FXML
     private void btnClickAction(ActionEvent event) {
         lblOut.setText("Hello World!");
+        cont++;
+        lblOut.setText(Integer.toString(cont));
     }
     
     @Override
