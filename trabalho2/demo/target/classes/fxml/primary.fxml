@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="com.example.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FXMLController">
     <children>
-        <Button layoutX="128.0" layoutY="107.0" onAction="#btnClickAction" text="Click Me!" />
-        <Button layoutX="128.0" layoutY="150.0" onAction="#btnClickAction" text="Click Here!" />
-        <Button layoutX="128.0" layoutY="150.0" onAction="#btnClickAction" text="Click Here!" />
+        <Button layoutX="340.0" layoutY="242.0" onAction="#btnClickAction" style="-fx-background-color: #3a2b22;" text="Click Me!" />
+        <Button layoutX="170.0" layoutY="323.0" onAction="#btnClickAction" text="Click Here!" />
+        <Button layoutX="78.0" layoutY="323.0" onAction="#btnClickAction" text="Click Here!" />
 
-        <Label fx:id="lblOut" layoutX="53.0" layoutY="30.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0" />
-        <Label fx:id="lblCont" layoutX="23.0" layoutY="63.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0" />
+        <Label fx:id="lblOut" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="136.0" layoutY="26.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0" text="pi">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Label fx:id="lblCont" layoutX="198.0" layoutY="67.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu></Label>
+      <Accordion cacheHint="QUALITY" depthTest="ENABLE" layoutX="103.0" layoutY="157.0" nodeOrientation="LEFT_TO_RIGHT">
+        <panes>
+          <TitledPane animated="false" style="-fx-background-color: #92b576;" text="untitled 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" style="-fx-background-color: #526613;" text="untitled 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="0.0" prefWidth="202.0" text="untitled 3">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <Group layoutX="219.0" layoutY="81.0" />
+      <AmbientLight color="CHARTREUSE" layoutX="77.0" layoutY="46.0" lightOn="true" />
+      <PointLight color="CHARTREUSE" layoutX="62.0" layoutY="242.0" lightOn="true" />
+      <DatePicker layoutX="386.0" layoutY="52.0">
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </DatePicker>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <ComboBox layoutX="38.0" layoutY="67.0" prefWidth="150.0" promptText="oi" />
+      <ChoiceBox layoutX="276.0" layoutY="105.0" prefWidth="150.0" />
     </children>
 </AnchorPane>
