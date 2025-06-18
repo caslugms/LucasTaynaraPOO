@@ -7,13 +7,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="635.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FXMLController">
     <children>
-        <Button layoutX="340.0" layoutY="242.0" onAction="#btnClickAction" style="-fx-background-color: #3a2b22;" text="Click Me!" />
+        <Button layoutX="412.0" layoutY="511.0" onAction="#btnClickAction" style="-fx-background-color: #3a2b22;" text="Click Me!" />
         <Button layoutX="170.0" layoutY="323.0" onAction="#btnClickAction" text="Click Here!" />
         <Button layoutX="78.0" layoutY="323.0" onAction="#btnClickAction" text="Click Here!" />
 
-        <Label fx:id="lblOut" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="136.0" layoutY="26.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0" text="pi">
+        <Label fx:id="lblOut" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="169.0" layoutY="395.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0" text="pi">
          <contextMenu>
             <ContextMenu>
               <items>
@@ -24,7 +24,7 @@
          <font>
             <Font size="18.0" />
          </font></Label>
-        <Label fx:id="lblCont" layoutX="198.0" layoutY="67.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0">
+        <Label fx:id="lblCont" layoutX="178.0" layoutY="351.0" minHeight="16" minWidth="69" prefHeight="52.0" prefWidth="215.0">
          <contextMenu>
             <ContextMenu>
               <items>
@@ -32,35 +32,53 @@
               </items>
             </ContextMenu>
          </contextMenu></Label>
-      <Accordion cacheHint="QUALITY" depthTest="ENABLE" layoutX="103.0" layoutY="157.0" nodeOrientation="LEFT_TO_RIGHT">
-        <panes>
-          <TitledPane animated="false" style="-fx-background-color: #92b576;" text="untitled 1">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" style="-fx-background-color: #526613;" text="untitled 2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" prefHeight="0.0" prefWidth="202.0" text="untitled 3">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-        </panes>
-      </Accordion>
+      <Accordion cacheHint="QUALITY" depthTest="ENABLE" layoutX="103.0" layoutY="157.0" nodeOrientation="LEFT_TO_RIGHT" />
       <Group layoutX="219.0" layoutY="81.0" />
       <AmbientLight color="CHARTREUSE" layoutX="77.0" layoutY="46.0" lightOn="true" />
       <PointLight color="CHARTREUSE" layoutX="62.0" layoutY="242.0" lightOn="true" />
-      <DatePicker layoutX="386.0" layoutY="52.0">
+      <DatePicker layoutX="492.0" layoutY="496.0">
          <cursor>
             <Cursor fx:constant="DISAPPEAR" />
          </cursor>
       </DatePicker>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
-      <ComboBox layoutX="38.0" layoutY="67.0" prefWidth="150.0" promptText="oi" />
-      <ChoiceBox layoutX="276.0" layoutY="105.0" prefWidth="150.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="212.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://www.google.com/imgres?q=imagem&amp;imgurl=https%3A%2F%2Fgru.ifsp.edu.br%2Fimages%2Fphocagallery%2Fgaleria2%2Fimage03_grd.png&amp;imgrefurl=https%3A%2F%2Fgru.ifsp.edu.br%2Fimagens%2F1-galeria-de-imagens-01%2Fdetail%2F3-imagem-3-titulo-com-ate-45-caracteres.html%3Ftmpl%3Dcomponent%26phocadownload%3D1&amp;docid=yHeqPacMFXjRPM&amp;tbnid=Qy4_CS6oKCB7rM&amp;vet=12ahUKEwj758aonPuNAxXVD7kGHUj2D_AQM3oECHwQAA..i&amp;w=620&amp;h=465&amp;hcb=2&amp;ved=2ahUKEwj758aonPuNAxXVD7kGHUj2D_AQM3oECHwQAA" />
+         </image></ImageView>
+      <ComboBox layoutX="202.0" layoutY="433.0" prefWidth="150.0" promptText="oi" />
+      <ChoiceBox layoutX="234.0" layoutY="381.0" prefWidth="150.0" />
+      <Label layoutX="410.0" layoutY="367.0" text="Senha" />
+      <MenuBar layoutX="16.0" layoutY="12.0" prefHeight="29.0" prefWidth="767.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <PasswordField layoutX="417.0" layoutY="392.0" />
+      <TextArea layoutX="556.0" layoutY="177.0" prefHeight="200.0" prefWidth="200.0" text="kmghkg" />
+      <TextField layoutX="441.0" layoutY="338.0" text="kfgjkfgkghk" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="17.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://www.google.com/imgres?q=imagem&amp;imgurl=https%3A%2F%2Fgru.ifsp.edu.br%2Fimages%2Fphocagallery%2Fgaleria2%2Fimage03_grd.png&amp;imgrefurl=https%3A%2F%2Fgru.ifsp.edu.br%2Fimagens%2F1-galeria-de-imagens-01%2Fdetail%2F3-imagem-3-titulo-com-ate-45-caracteres.html%3Ftmpl%3Dcomponent%26phocadownload%3D1&amp;docid=yHeqPacMFXjRPM&amp;tbnid=Qy4_CS6oKCB7rM&amp;vet=12ahUKEwj758aonPuNAxXVD7kGHUj2D_AQM3oECHwQAA..i&amp;w=620&amp;h=465&amp;hcb=2&amp;ved=2ahUKEwj758aonPuNAxXVD7kGHUj2D_AQM3oECHwQAA" />
+         </image>
+      </ImageView>
+      <Text layoutX="265.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KARTOFFEL RESTAURANT" wrappingWidth="290.0">
+         <font>
+            <Font name="Noto Sans Georgian Medium" size="24.0" />
+         </font>
+      </Text>
     </children>
 </AnchorPane>
